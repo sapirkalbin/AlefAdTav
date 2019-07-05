@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		438146C222CF52C900D7B306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438146C122CF52C900D7B306 /* AppDelegate.swift */; };
+		438146C422CF52C900D7B306 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438146C322CF52C900D7B306 /* ViewController.swift */; };
+		438146C722CF52C900D7B306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438146C522CF52C900D7B306 /* Main.storyboard */; };
+		438146C922CF52CB00D7B306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438146C822CF52CB00D7B306 /* Assets.xcassets */; };
+		438146CC22CF52CB00D7B306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438146CA22CF52CB00D7B306 /* LaunchScreen.storyboard */; };
+		438146D722CF52CB00D7B306 /* AlefAdTavTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438146D622CF52CB00D7B306 /* AlefAdTavTests.swift */; };
+		438146E222CF52CB00D7B306 /* AlefAdTavUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438146E122CF52CB00D7B306 /* AlefAdTavUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		438146D322CF52CB00D7B306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 438146B622CF52C900D7B306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 438146BD22CF52C900D7B306;
+			remoteInfo = AlefAdTav;
+		};
+		438146DE22CF52CB00D7B306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 438146B622CF52C900D7B306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 438146BD22CF52C900D7B306;
+			remoteInfo = AlefAdTav;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		438146BE22CF52C900D7B306 /* AlefAdTav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlefAdTav.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		438146C122CF52C900D7B306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		438146C322CF52C900D7B306 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		438146C622CF52C900D7B306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		438146C822CF52CB00D7B306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		438146CB22CF52CB00D7B306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		438146CD22CF52CB00D7B306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438146D222CF52CB00D7B306 /* AlefAdTavTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlefAdTavTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		438146D622CF52CB00D7B306 /* AlefAdTavTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefAdTavTests.swift; sourceTree = "<group>"; };
+		438146D822CF52CB00D7B306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438146DD22CF52CB00D7B306 /* AlefAdTavUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlefAdTavUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		438146E122CF52CB00D7B306 /* AlefAdTavUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefAdTavUITests.swift; sourceTree = "<group>"; };
+		438146E322CF52CB00D7B306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		438146BB22CF52C900D7B306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438146CF22CF52CB00D7B306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438146DA22CF52CB00D7B306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		438146B522CF52C900D7B306 = {
+			isa = PBXGroup;
+			children = (
+				438146C022CF52C900D7B306 /* AlefAdTav */,
+				438146D522CF52CB00D7B306 /* AlefAdTavTests */,
+				438146E022CF52CB00D7B306 /* AlefAdTavUITests */,
+				438146BF22CF52C900D7B306 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		438146BF22CF52C900D7B306 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				438146BE22CF52C900D7B306 /* AlefAdTav.app */,
+				438146D222CF52CB00D7B306 /* AlefAdTavTests.xctest */,
+				438146DD22CF52CB00D7B306 /* AlefAdTavUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		438146C022CF52C900D7B306 /* AlefAdTav */ = {
+			isa = PBXGroup;
+			children = (
+				438146C122CF52C900D7B306 /* AppDelegate.swift */,
+				438146C322CF52C900D7B306 /* ViewController.swift */,
+				438146C522CF52C900D7B306 /* Main.storyboard */,
+				438146C822CF52CB00D7B306 /* Assets.xcassets */,
+				438146CA22CF52CB00D7B306 /* LaunchScreen.storyboard */,
+				438146CD22CF52CB00D7B306 /* Info.plist */,
+			);
+			path = AlefAdTav;
+			sourceTree = "<group>";
+		};
+		438146D522CF52CB00D7B306 /* AlefAdTavTests */ = {
+			isa = PBXGroup;
+			children = (
+				438146D622CF52CB00D7B306 /* AlefAdTavTests.swift */,
+				438146D822CF52CB00D7B306 /* Info.plist */,
+			);
+			path = AlefAdTavTests;
+			sourceTree = "<group>";
+		};
+		438146E022CF52CB00D7B306 /* AlefAdTavUITests */ = {
+			isa = PBXGroup;
+			children = (
+				438146E122CF52CB00D7B306 /* AlefAdTavUITests.swift */,
+				438146E322CF52CB00D7B306 /* Info.plist */,
+			);
+			path = AlefAdTavUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		438146BD22CF52C900D7B306 /* AlefAdTav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438146E622CF52CB00D7B306 /* Build configuration list for PBXNativeTarget "AlefAdTav" */;
+			buildPhases = (
+				438146BA22CF52C900D7B306 /* Sources */,
+				438146BB22CF52C900D7B306 /* Frameworks */,
+				438146BC22CF52C900D7B306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlefAdTav;
+			productName = AlefAdTav;
+			productReference = 438146BE22CF52C900D7B306 /* AlefAdTav.app */;
+			productType = "com.apple.product-type.application";
+		};
+		438146D122CF52CB00D7B306 /* AlefAdTavTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438146E922CF52CB00D7B306 /* Build configuration list for PBXNativeTarget "AlefAdTavTests" */;
+			buildPhases = (
+				438146CE22CF52CB00D7B306 /* Sources */,
+				438146CF22CF52CB00D7B306 /* Frameworks */,
+				438146D022CF52CB00D7B306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				438146D422CF52CB00D7B306 /* PBXTargetDependency */,
+			);
+			name = AlefAdTavTests;
+			productName = AlefAdTavTests;
+			productReference = 438146D222CF52CB00D7B306 /* AlefAdTavTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		438146DC22CF52CB00D7B306 /* AlefAdTavUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438146EC22CF52CB00D7B306 /* Build configuration list for PBXNativeTarget "AlefAdTavUITests" */;
+			buildPhases = (
+				438146D922CF52CB00D7B306 /* Sources */,
+				438146DA22CF52CB00D7B306 /* Frameworks */,
+				438146DB22CF52CB00D7B306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				438146DF22CF52CB00D7B306 /* PBXTargetDependency */,
+			);
+			name = AlefAdTavUITests;
+			productName = AlefAdTavUITests;
+			productReference = 438146DD22CF52CB00D7B306 /* AlefAdTavUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		438146B622CF52C900D7B306 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Sapir Kalbin";
+				TargetAttributes = {
+					438146BD22CF52C900D7B306 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					438146D122CF52CB00D7B306 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 438146BD22CF52C900D7B306;
+					};
+					438146DC22CF52CB00D7B306 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 438146BD22CF52C900D7B306;
+					};
+				};
+			};
+			buildConfigurationList = 438146B922CF52C900D7B306 /* Build configuration list for PBXProject "AlefAdTav" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 438146B522CF52C900D7B306;
+			productRefGroup = 438146BF22CF52C900D7B306 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				438146BD22CF52C900D7B306 /* AlefAdTav */,
+				438146D122CF52CB00D7B306 /* AlefAdTavTests */,
+				438146DC22CF52CB00D7B306 /* AlefAdTavUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		438146BC22CF52C900D7B306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438146CC22CF52CB00D7B306 /* LaunchScreen.storyboard in Resources */,
+				438146C922CF52CB00D7B306 /* Assets.xcassets in Resources */,
+				438146C722CF52C900D7B306 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438146D022CF52CB00D7B306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438146DB22CF52CB00D7B306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		438146BA22CF52C900D7B306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438146C422CF52C900D7B306 /* ViewController.swift in Sources */,
+				438146C222CF52C900D7B306 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438146CE22CF52CB00D7B306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438146D722CF52CB00D7B306 /* AlefAdTavTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438146D922CF52CB00D7B306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438146E222CF52CB00D7B306 /* AlefAdTavUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		438146D422CF52CB00D7B306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 438146BD22CF52C900D7B306 /* AlefAdTav */;
+			targetProxy = 438146D322CF52CB00D7B306 /* PBXContainerItemProxy */;
+		};
+		438146DF22CF52CB00D7B306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 438146BD22CF52C900D7B306 /* AlefAdTav */;
+			targetProxy = 438146DE22CF52CB00D7B306 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		438146C522CF52C900D7B306 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				438146C622CF52C900D7B306 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		438146CA22CF52CB00D7B306 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				438146CB22CF52CB00D7B306 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		438146E422CF52CB00D7B306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		438146E522CF52CB00D7B306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		438146E722CF52CB00D7B306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlefAdTav/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sapir-Kalbin-Ltd.AlefAdTav";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		438146E822CF52CB00D7B306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlefAdTav/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sapir-Kalbin-Ltd.AlefAdTav";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		438146EA22CF52CB00D7B306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlefAdTavTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sapir-Kalbin-Ltd.AlefAdTavTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlefAdTav.app/AlefAdTav";
+			};
+			name = Debug;
+		};
+		438146EB22CF52CB00D7B306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlefAdTavTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sapir-Kalbin-Ltd.AlefAdTavTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlefAdTav.app/AlefAdTav";
+			};
+			name = Release;
+		};
+		438146ED22CF52CB00D7B306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlefAdTavUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sapir-Kalbin-Ltd.AlefAdTavUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlefAdTav;
+			};
+			name = Debug;
+		};
+		438146EE22CF52CB00D7B306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlefAdTavUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sapir-Kalbin-Ltd.AlefAdTavUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlefAdTav;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		438146B922CF52C900D7B306 /* Build configuration list for PBXProject "AlefAdTav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438146E422CF52CB00D7B306 /* Debug */,
+				438146E522CF52CB00D7B306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438146E622CF52CB00D7B306 /* Build configuration list for PBXNativeTarget "AlefAdTav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438146E722CF52CB00D7B306 /* Debug */,
+				438146E822CF52CB00D7B306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438146E922CF52CB00D7B306 /* Build configuration list for PBXNativeTarget "AlefAdTavTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438146EA22CF52CB00D7B306 /* Debug */,
+				438146EB22CF52CB00D7B306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438146EC22CF52CB00D7B306 /* Build configuration list for PBXNativeTarget "AlefAdTavUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438146ED22CF52CB00D7B306 /* Debug */,
+				438146EE22CF52CB00D7B306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 438146B622CF52C900D7B306 /* Project object */;
+}
