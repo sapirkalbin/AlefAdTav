@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="girlSelection" image="girl_selection" translatesAutoresizingMaskIntoConstraints="NO" id="Ztj-Zp-Rx6">
-                                <rect key="frame" x="103" y="482" width="208.5" height="214.5"/>
+                                <rect key="frame" x="103" y="680.5" width="208.5" height="16"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="258" verticalHuggingPriority="251" restorationIdentifier="boySelection" image="boy_selection" translatesAutoresizingMaskIntoConstraints="NO" id="yqI-dA-Xfx">
-                                <rect key="frame" x="103" y="208" width="208.50000000000006" height="214.5"/>
+                                <rect key="frame" x="103" y="208" width="208.5" height="16"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.86212867498397827" green="0.8946184515953064" blue="0.71668165922164917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,7 +60,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lrrters" translatesAutoresizingMaskIntoConstraints="NO" id="rce-0d-iJM">
-                                <rect key="frame" x="68" y="229.99999999999997" width="294" height="221.00000000000009"/>
+                                <rect key="frame" x="68" y="230" width="294" height="221"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.86212867498397827" green="0.8946184515953064" blue="0.71668165922164917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
