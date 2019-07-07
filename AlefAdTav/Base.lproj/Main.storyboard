@@ -1,24 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="AlefAdTav" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="girlSelection" image="girl_selection" translatesAutoresizingMaskIntoConstraints="NO" id="Ztj-Zp-Rx6">
+                                <rect key="frame" x="103" y="482" width="208.5" height="214.5"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="258" verticalHuggingPriority="251" restorationIdentifier="boySelection" image="boy_selection" translatesAutoresizingMaskIntoConstraints="NO" id="yqI-dA-Xfx">
+                                <rect key="frame" x="103" y="208" width="208.50000000000006" height="214.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86212867498397827" green="0.8946184515953064" blue="0.71668165922164917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ztj-Zp-Rx6" secondAttribute="trailing" constant="102.5" id="7SX-55-fGY"/>
+                            <constraint firstItem="yqI-dA-Xfx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="164" id="ADc-ru-ivC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ztj-Zp-Rx6" secondAttribute="bottom" constant="165.5" id="IJy-FN-CUq"/>
+                            <constraint firstItem="Ztj-Zp-Rx6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="Rg9-JV-KTD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yqI-dA-Xfx" secondAttribute="trailing" constant="102.5" id="ZyG-Xc-v1X"/>
+                            <constraint firstItem="yqI-dA-Xfx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="u9o-y7-0Pn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="boySelection" destination="yqI-dA-Xfx" id="h4N-IT-YnI"/>
+                        <outlet property="girlSelection" destination="Ztj-Zp-Rx6" id="hwv-VH-6ve"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="108.69565217391305" y="23.4375"/>
+        </scene>
+        <!--Subject View Controller-->
+        <scene sceneID="dmN-AI-dwA">
+            <objects>
+                <viewController storyboardIdentifier="SubjectViewController" id="01A-f7-Ltx" customClass="SubjectViewController" customModule="AlefAdTav" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O3G-rZ-kAd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nikud" translatesAutoresizingMaskIntoConstraints="NO" id="nGo-rJ-s6c">
+                                <rect key="frame" x="54" y="459" width="306" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="gOZ-fP-Q7n"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lrrters" translatesAutoresizingMaskIntoConstraints="NO" id="rce-0d-iJM">
+                                <rect key="frame" x="68" y="229.99999999999997" width="294" height="221.00000000000009"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86212867498397827" green="0.8946184515953064" blue="0.71668165922164917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rce-0d-iJM" firstAttribute="leading" secondItem="YNW-t8-myv" secondAttribute="leading" constant="68" id="1qh-RK-MEq"/>
+                            <constraint firstItem="YNW-t8-myv" firstAttribute="bottom" secondItem="nGo-rJ-s6c" secondAttribute="bottom" constant="240" id="7Qg-22-2qn"/>
+                            <constraint firstItem="rce-0d-iJM" firstAttribute="top" secondItem="YNW-t8-myv" secondAttribute="top" constant="186" id="GLV-5C-0va"/>
+                            <constraint firstItem="nGo-rJ-s6c" firstAttribute="firstBaseline" secondItem="rce-0d-iJM" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="KFL-qx-4S0"/>
+                            <constraint firstItem="YNW-t8-myv" firstAttribute="trailing" secondItem="rce-0d-iJM" secondAttribute="trailing" constant="52" id="KOb-cq-350"/>
+                            <constraint firstItem="nGo-rJ-s6c" firstAttribute="leading" secondItem="YNW-t8-myv" secondAttribute="leading" constant="54" id="Vub-ec-svM"/>
+                            <constraint firstItem="nGo-rJ-s6c" firstAttribute="centerX" secondItem="O3G-rZ-kAd" secondAttribute="centerX" id="gG0-32-IJq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YNW-t8-myv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1o-ob-9W6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969.56521739130437" y="22.767857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="boy_selection" width="208.5" height="214.5"/>
+        <image name="girl_selection" width="210" height="214.5"/>
+        <image name="lrrters" width="294" height="196"/>
+        <image name="nikud" width="277" height="195.5"/>
+    </resources>
 </document>
