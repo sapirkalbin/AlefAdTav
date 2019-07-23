@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		432FFDD822D26A9100ED81CF /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FFDD722D26A9100ED81CF /* SubjectViewController.swift */; };
+		432FFDDA22DCD28600ED81CF /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FFDD922DCD28600ED81CF /* AppUtility.swift */; };
+		432FFDDC22DCD76100ED81CF /* AllLettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FFDDB22DCD76100ED81CF /* AllLettersViewController.swift */; };
 		438146C222CF52C900D7B306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438146C122CF52C900D7B306 /* AppDelegate.swift */; };
 		438146C422CF52C900D7B306 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438146C322CF52C900D7B306 /* MainViewController.swift */; };
 		438146C722CF52C900D7B306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438146C522CF52C900D7B306 /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 		438146CC22CF52CB00D7B306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438146CA22CF52CB00D7B306 /* LaunchScreen.storyboard */; };
 		438146D722CF52CB00D7B306 /* AlefAdTavTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438146D622CF52CB00D7B306 /* AlefAdTavTests.swift */; };
 		438146E222CF52CB00D7B306 /* AlefAdTavUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438146E122CF52CB00D7B306 /* AlefAdTavUITests.swift */; };
+		4392626A22E76BD3000B67C6 /* AlefIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392626822E76BD3000B67C6 /* AlefIntroViewController.swift */; };
+		4392626E22E76C24000B67C6 /* AlefWritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392626D22E76C24000B67C6 /* AlefWritingViewController.swift */; };
+		4392627022E76C55000B67C6 /* AlefImageSelectGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392626F22E76C55000B67C6 /* AlefImageSelectGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		432FFDD722D26A9100ED81CF /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
+		432FFDD922DCD28600ED81CF /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		432FFDDB22DCD76100ED81CF /* AllLettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLettersViewController.swift; sourceTree = "<group>"; };
 		438146BE22CF52C900D7B306 /* AlefAdTav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlefAdTav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438146C122CF52C900D7B306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		438146C322CF52C900D7B306 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		438146DD22CF52CB00D7B306 /* AlefAdTavUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlefAdTavUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		438146E122CF52CB00D7B306 /* AlefAdTavUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefAdTavUITests.swift; sourceTree = "<group>"; };
 		438146E322CF52CB00D7B306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4392626822E76BD3000B67C6 /* AlefIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefIntroViewController.swift; sourceTree = "<group>"; };
+		4392626D22E76C24000B67C6 /* AlefWritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefWritingViewController.swift; sourceTree = "<group>"; };
+		4392626F22E76C55000B67C6 /* AlefImageSelectGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefImageSelectGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,13 @@
 		438146C022CF52C900D7B306 /* AlefAdTav */ = {
 			isa = PBXGroup;
 			children = (
+				4392627122E76CB1000B67C6 /* Utils */,
+				4392626622E76A73000B67C6 /* UI */,
 				438146C122CF52C900D7B306 /* AppDelegate.swift */,
-				438146C322CF52C900D7B306 /* MainViewController.swift */,
 				438146C522CF52C900D7B306 /* Main.storyboard */,
 				438146C822CF52CB00D7B306 /* Assets.xcassets */,
 				438146CA22CF52CB00D7B306 /* LaunchScreen.storyboard */,
 				438146CD22CF52CB00D7B306 /* Info.plist */,
-				432FFDD722D26A9100ED81CF /* SubjectViewController.swift */,
 			);
 			path = AlefAdTav;
 			sourceTree = "<group>";
@@ -126,6 +136,43 @@
 				438146E322CF52CB00D7B306 /* Info.plist */,
 			);
 			path = AlefAdTavUITests;
+			sourceTree = "<group>";
+		};
+		4392626622E76A73000B67C6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				438146C322CF52C900D7B306 /* MainViewController.swift */,
+				432FFDD722D26A9100ED81CF /* SubjectViewController.swift */,
+				432FFDDB22DCD76100ED81CF /* AllLettersViewController.swift */,
+				4392626722E76A7C000B67C6 /* Letters */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4392626722E76A7C000B67C6 /* Letters */ = {
+			isa = PBXGroup;
+			children = (
+				4392626C22E76BFE000B67C6 /* Alef */,
+			);
+			path = Letters;
+			sourceTree = "<group>";
+		};
+		4392626C22E76BFE000B67C6 /* Alef */ = {
+			isa = PBXGroup;
+			children = (
+				4392626822E76BD3000B67C6 /* AlefIntroViewController.swift */,
+				4392626D22E76C24000B67C6 /* AlefWritingViewController.swift */,
+				4392626F22E76C55000B67C6 /* AlefImageSelectGameViewController.swift */,
+			);
+			path = Alef;
+			sourceTree = "<group>";
+		};
+		4392627122E76CB1000B67C6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				432FFDD922DCD28600ED81CF /* AppUtility.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432FFDDA22DCD28600ED81CF /* AppUtility.swift in Sources */,
 				438146C422CF52C900D7B306 /* MainViewController.swift in Sources */,
+				432FFDDC22DCD76100ED81CF /* AllLettersViewController.swift in Sources */,
+				4392626A22E76BD3000B67C6 /* AlefIntroViewController.swift in Sources */,
 				432FFDD822D26A9100ED81CF /* SubjectViewController.swift in Sources */,
+				4392626E22E76C24000B67C6 /* AlefWritingViewController.swift in Sources */,
+				4392627022E76C55000B67C6 /* AlefImageSelectGameViewController.swift in Sources */,
 				438146C222CF52C900D7B306 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
