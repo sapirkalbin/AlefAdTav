@@ -20,6 +20,8 @@
 		4392626A22E76BD3000B67C6 /* AlefIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392626822E76BD3000B67C6 /* AlefIntroViewController.swift */; };
 		4392626E22E76C24000B67C6 /* AlefWritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392626D22E76C24000B67C6 /* AlefWritingViewController.swift */; };
 		4392627022E76C55000B67C6 /* AlefImageSelectGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392626F22E76C55000B67C6 /* AlefImageSelectGameViewController.swift */; };
+		4392627422E87B15000B67C6 /* LetterProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392627222E87B15000B67C6 /* LetterProgressCell.swift */; };
+		4392627522E87B15000B67C6 /* LetterProgressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4392627322E87B15000B67C6 /* LetterProgressCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		4392626822E76BD3000B67C6 /* AlefIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefIntroViewController.swift; sourceTree = "<group>"; };
 		4392626D22E76C24000B67C6 /* AlefWritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefWritingViewController.swift; sourceTree = "<group>"; };
 		4392626F22E76C55000B67C6 /* AlefImageSelectGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefImageSelectGameViewController.swift; sourceTree = "<group>"; };
+		4392627222E87B15000B67C6 /* LetterProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterProgressCell.swift; sourceTree = "<group>"; };
+		4392627322E87B15000B67C6 /* LetterProgressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LetterProgressCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 				438146C322CF52C900D7B306 /* MainViewController.swift */,
 				432FFDD722D26A9100ED81CF /* SubjectViewController.swift */,
 				432FFDDB22DCD76100ED81CF /* AllLettersViewController.swift */,
+				4392627222E87B15000B67C6 /* LetterProgressCell.swift */,
+				4392627322E87B15000B67C6 /* LetterProgressCell.xib */,
 				4392626722E76A7C000B67C6 /* Letters */,
 			);
 			path = UI;
@@ -279,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4392627522E87B15000B67C6 /* LetterProgressCell.xib in Resources */,
 				438146CC22CF52CB00D7B306 /* LaunchScreen.storyboard in Resources */,
 				438146C922CF52CB00D7B306 /* Assets.xcassets in Resources */,
 				438146C722CF52C900D7B306 /* Main.storyboard in Resources */,
@@ -306,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4392627422E87B15000B67C6 /* LetterProgressCell.swift in Sources */,
 				432FFDDA22DCD28600ED81CF /* AppUtility.swift in Sources */,
 				438146C422CF52C900D7B306 /* MainViewController.swift in Sources */,
 				432FFDDC22DCD76100ED81CF /* AllLettersViewController.swift in Sources */,

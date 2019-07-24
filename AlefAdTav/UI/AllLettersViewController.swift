@@ -10,23 +10,39 @@ import UIKit
 
 class AllLettersViewController: UIViewController ,UIGestureRecognizerDelegate
 {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    static let cellID: String = "letterCellID"
 //    private let sectionInsets = UIEdgeInsets(top: 4.0, left: 4.0, bottom: 0.0, right: 4.0)
-    private let lettersList: [[String]] = [["alef", "beit"], ["gimel", "daled"], ["hey", "vav"],
-                                           ["zain", "heit"], ["tet", "yod"], ["kaf", "lamed"], ["mem", "nun"],
-                                           ["samech", "ain"], ["pey", "zadi"], ["kuf", "reish"], ["shin", "taf"], ["",""], [""]]
+    private let lettersList: [[String]] = [["alef", "beit", "gimel", "daled"], ["hey", "vav","zain", "heit"], ["tet", "yod","kaf", "lamed"], ["mem", "nun",
+                                "samech", "ain"], ["pey", "zadi","kuf", "reish"], ["shin", "taf"]]
     var lettersOrNikud = ""
     var progressList =  [String : Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        collectionView.register(UINib(nibName: "LetterProgressCell", bundle: nil), forCellWithReuseIdentifier: AllLettersViewController.cellID)
         getLocalProgressData()
+        createCollectionViewLayout()
         
     }
     
-    func notifyDataSetChanged(collectionView: UICollectionView, indexPathArr: [IndexPath]) {
-        collectionView.reloadItems(at: indexPathArr);
+    private func createCollectionViewLayout()
+    {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 0.0
+        layout.minimumLineSpacing = 0.0
+        layout.sectionInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+        collectionView.collectionViewLayout = layout
+        
+        collectionView.reloadData()
     }
+    
+//    func notifyDataSetChanged(collectionView: UICollectionView, indexPathArr: [IndexPath]) {
+//        collectionView.reloadItems(at: indexPathArr);
+//    }
     
     func setSubject(lettersOrNikud: String)
     {
@@ -43,6 +59,9 @@ class AllLettersViewController: UIViewController ,UIGestureRecognizerDelegate
                 if let progress: Int = defaults.integer(forKey: letter) {
                     progressList[letter] = progress
                 }
+                else{
+                    progressList[letter] = 0
+                }
             }
         }
     }
@@ -50,24 +69,32 @@ class AllLettersViewController: UIViewController ,UIGestureRecognizerDelegate
 
 extension AllLettersViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return  5
+        return  lettersList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return lettersList[section].count
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width / 4, height: view.frame.height / 3)
+    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LetterProgressCell", for: indexPath) as! LetterProgressCell
-        
-        cell.letterImage.image = UIImage(named: lettersList[indexPath.section][indexPath.row])
-        
-        if let progressLetter = progressList[lettersList[indexPath.section][indexPath.row]] {
-            cell.progress.progress = Float(progressLetter)
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AllLettersViewController.cellID, for: indexPath) as? LetterProgressCell
+        {
+            let name = lettersList[indexPath.section][indexPath.row]
+            
+            cell.letterImage.image = UIImage(named: lettersList[indexPath.section][indexPath.row])
+            cell.backgroundColor = UIColor.red
+            
+            if let progressLetter = progressList[lettersList[indexPath.section][indexPath.row]] {
+                cell.progress.progress = Float(progressLetter)
+            }
+            
+            return cell
         }
         
-        return cell
+        return UICollectionViewCell()
     }
     
     // func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -93,12 +120,5 @@ extension AllLettersViewController: UICollectionViewDelegate, UICollectionViewDa
 //        return sectionInsets.left;
 //    }
 //
-    
-}
-
-
-class LetterProgressCell: UICollectionViewCell {
-    @IBOutlet weak var progress: UIProgressView!
-    @IBOutlet weak var letterImage: UIImageView!
     
 }
