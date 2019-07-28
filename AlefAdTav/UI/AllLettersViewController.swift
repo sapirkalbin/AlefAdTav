@@ -15,10 +15,10 @@ class AllLettersViewController: UIViewController ,UIGestureRecognizerDelegate
     
     static let cellID: String = "letterCellID"
     //    private let sectionInsets = UIEdgeInsets(top: 4.0, left: 4.0, bottom: 0.0, right: 4.0)
-    private let lettersList: [[String]] = [["alef", "beit", "gimel"],["daled","hey", "vav"],["zain", "heit","tet"],[ "yod","kaf", "lamed"], ["mem", "nun",
+    private let lettersList: [[String]] = [["alef", "bet", "gimel"],["daled","hey", "vav"],["zain", "het","tet"],[ "yod","kaf", "lamed"], ["mem", "nun",
                                                                                                                                              "samech"] ,["ain","pey", "zadi"],["kuf","reish","shin"],["tav"]]
     var lettersOrNikud = ""
-    var progressList =  [String : Int]()
+    var progressList =  [String : Float]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +54,7 @@ class AllLettersViewController: UIViewController ,UIGestureRecognizerDelegate
         {
             for letter in row
             {
-                if let progress: Int = defaults.integer(forKey: letter) {
+                if let progress = defaults.float(forKey: letter) as Float? {
                     progressList[letter] = progress
                 }
                 else{
@@ -66,9 +66,9 @@ class AllLettersViewController: UIViewController ,UIGestureRecognizerDelegate
     
     private func goToViewController(letter: String)
     {
-        if let viewcontroller = storyboard?.instantiateViewController(withIdentifier: letter + "ViewController") as? LetterIntroViewController
+        if let viewcontroller = storyboard?.instantiateViewController(withIdentifier: "LetterIntroViewController")
         {
-            viewcontroller.setLetter(letter: letter)
+            AppUtility.currentLetter = letter
             self.present(viewcontroller, animated: true, completion: nil)
         }
     }
@@ -90,10 +90,14 @@ extension AllLettersViewController: UICollectionViewDelegate, UICollectionViewDa
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AllLettersViewController.cellID, for: indexPath) as? LetterProgressCell
         {
             let name = lettersList[indexPath.section][indexPath.row]
-            cell.letterImage.image = UIImage(named: lettersList[indexPath.section][indexPath.row])
             
-            if let progressLetter = progressList[lettersList[indexPath.section][indexPath.row]] {
-                cell.progress.progress = Float(progressLetter)
+            DispatchQueue.main.async {
+                cell.letterImage.image = UIImage(named: name)
+            }
+            
+            
+            if let progressLetter = progressList[name] {
+                cell.progress.progress = progressLetter
             }
             cell.name = name
             return cell

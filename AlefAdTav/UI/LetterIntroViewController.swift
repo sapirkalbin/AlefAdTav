@@ -13,20 +13,20 @@ class LetterIntroViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var homeButton: UIImageView!
     @IBOutlet weak var nextButton: UIImageView!
-    var numOfImagesDictionary = ["alef": 3, "beit": 3, "gimel": 3, "daled": 2,"hey":3, "vav":2,"zain":2, "heit":3,"tet": 3, "yod": 2,"kaf": 3, "lamed":3, "mem": 4, "nun": 3,
+    var numOfImagesDictionary = ["alef": 3, "bet": 2, "gimel": 4, "daled": 2,"hey":3, "vav":2,"zain":2, "het":3,"tet": 4, "yod": 2,"kaf": 3, "lamed":4, "mem": 4, "nun": 3,
                                  "samech": 2 ,"ain": 3,"pey":5 , "zadi": 3,"kuf":3 ,"reish":2,"shin":4,"tav":4]
     var player: AVAudioPlayer?
     var currentLetter: String = ""
     var soundTimer = Timer()
     var imagesTimer = Timer()
-    var imagesCounter = 1
-    
-    var imagesTimesDictionary = ["alef": [3.0, 4.0,5.0], "beit": [3.0, 4.0,5.0], "gimel": [3.0, 4.0,5.0], "daled": [3.0, 4.0],"hey":[3.0, 4.0,5.0], "vav":[3.0, 4.0],"zain":[3.0, 4.0], "heit":[3.0, 4.0,5.0],"tet": [3.0, 4.0,5.0], "yod": [3.0, 4.0],"kaf": [3.0, 4.0,5.0], "lamed":[3.0, 4.0,5.0], "mem": [3.0, 4.0,5.0, 6.0], "nun": [3.0, 4.0,5.0], "samech": [3.0, 4.0] ,"ain": [3.0, 4.0,5.0],"pey":[3.0, 4.0,5.0, 6.0,7.0] , "zadi": [3.0, 4.0,5.0],"kuf":[3.0, 4.0,5.0] ,"reish":[3.0, 4.0],"shin":[3.0, 4.0,5.0, 6.0],"tav":[3.0, 4.0,5.0, 6.0]]
+    var imagesCounter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        intializeSoundsTimer(seconds: 3)
+        currentLetter = AppUtility.currentLetter
+        
+        intializeSoundsTimer(seconds: 2)
         intializeImagesTimer()
         
         mainImage.image = UIImage(named: currentLetter)
@@ -40,13 +40,17 @@ class LetterIntroViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     @objc func imagesTimerHandler(_ timer: Timer) {
-        mainImage.image = UIImage(named: currentLetter+String(imagesCounter))
-        if let array = imagesTimesDictionary[currentLetter] {
-            if(imagesCounter == array.count)
+        if let numberOfImages = numOfImagesDictionary[currentLetter] {
+            if(imagesCounter == numberOfImages)
             {
                 imagesTimer.invalidate()
             }
+            else
+            {
+                mainImage.image = UIImage(named: currentLetter+String(imagesCounter))
+            }
         }
+        imagesCounter+=1
     }
     
     func intializeSoundsTimer(seconds: Double) {
@@ -55,16 +59,15 @@ class LetterIntroViewController: UIViewController, AVAudioPlayerDelegate {
     
     func intializeImagesTimer() {
         var _repeat = true
-        if let array = imagesTimesDictionary[currentLetter] {
-            if(imagesCounter == array.count)
+        if let numberOfImages = numOfImagesDictionary[currentLetter] {
+            if(imagesCounter == numberOfImages)
             {
                 _repeat = false
             }
-            imagesTimer = Timer.scheduledTimer(timeInterval: array[imagesCounter], target: self, selector: #selector(imagesTimerHandler(_:)), userInfo: nil, repeats: _repeat)
+            imagesTimer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(imagesTimerHandler(_:)), userInfo: nil, repeats: _repeat)
             
         }
         
-        imagesCounter+=1
         
         
     }
@@ -81,13 +84,8 @@ class LetterIntroViewController: UIViewController, AVAudioPlayerDelegate {
         nextButton.addGestureRecognizer(nextBtnTapGestureRecognizer)
     }
     
-    func setLetter(letter: String){
-        self.currentLetter = letter
-    }
     
-    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        // Next VC (Alef Writing)
-    }
+    
     
     @objc func homeTapped(_ tapGestureRecognizer: UITapGestureRecognizer)
     {
@@ -96,12 +94,25 @@ class LetterIntroViewController: UIViewController, AVAudioPlayerDelegate {
     
     @objc func nextTapped(_ tapGestureRecognizer: UITapGestureRecognizer)
     {
-        goToViewController(viewcontrollerName: "AlefWritingViewController")
+        goToViewController(viewcontrollerName: "LetterWritingViewController")
+        AppUtility.setProgressLetter(key: AppUtility.currentLetter, progress: 0.333)
     }
     
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        // Next VC (Alef Writing)
+    }
     private func goToViewController(viewcontrollerName: String)
     {
         if let viewcontroller = storyboard?.instantiateViewController(withIdentifier: viewcontrollerName)
+        {
+            self.present(viewcontroller, animated: true, completion: nil)
+        }
+    }
+    
+    private func goToWritingViewController(viewcontrollerName: String)
+    {
+        if let viewcontroller = storyboard?.instantiateViewController(withIdentifier: viewcontrollerName) as? LetterWritingViewController
         {
             self.present(viewcontroller, animated: true, completion: nil)
         }

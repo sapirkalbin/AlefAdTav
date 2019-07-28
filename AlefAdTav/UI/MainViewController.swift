@@ -38,19 +38,20 @@ class MainViewController: UIViewController {
     
     @objc func girlImageTapped(_ tapGestureRecognizer: UITapGestureRecognizer)
     {
-        goToTypeViewController(gender: "girl")
+        AppUtility.gender = "girl"
+        goToTypeViewController()
     }
     
     @objc func boyImageTapped(_ tapGestureRecognizer: UITapGestureRecognizer)
     {
-       goToTypeViewController(gender: "boy")
+        AppUtility.gender = "boy"
+       goToTypeViewController()
     }
     
-    private func goToTypeViewController(gender: String)
+    private func goToTypeViewController()
     {
-        if let subjectViewController = storyboard?.instantiateViewController(withIdentifier: "SubjectViewController") as? SubjectViewController
+        if let subjectViewController = storyboard?.instantiateViewController(withIdentifier: "SubjectViewController")
         {
-            subjectViewController.setGender(boyOrGirl: gender)
             self.present(subjectViewController, animated: true, completion: nil)
         }
     }

@@ -21,7 +21,7 @@ class SubjectViewController: UIViewController {
         let nikudTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(nikudImageTapped(_:)))
         
         lettersImage.isUserInteractionEnabled = true
-        nikudImage.isUserInteractionEnabled = true
+        //nikudImage.isUserInteractionEnabled = true
 
         lettersImage.addGestureRecognizer(lettersTapGestureRecognizer)
         nikudImage.addGestureRecognizer(nikudTapGestureRecognizer)
@@ -30,27 +30,22 @@ class SubjectViewController: UIViewController {
     
     @objc func nikudImageTapped(_ tapGestureRecognizer: UITapGestureRecognizer)
     {
-        goToListViewController(subject: "nikud")
+        goToViewController(subject: "nikud")
     }
     
     @objc func lettersmageTapped(_ tapGestureRecognizer: UITapGestureRecognizer)
     {
-        goToListViewController(subject: "letters")
+        goToViewController(subject: "letters")
     }
     
-    private func goToListViewController(subject: String)
+    private func goToViewController(subject: String)
     {
         if let allLettersViewController = storyboard?.instantiateViewController(withIdentifier: "AllLettersViewController") as? AllLettersViewController
         {
-            allLettersViewController.setSubject(lettersOrNikud: subject)
             self.present(allLettersViewController, animated: true, completion: nil)
         }
     }
     
-    func setGender(boyOrGirl: String)
-    {
-        gender = boyOrGirl
-    }
     
     
 }

@@ -10,29 +10,20 @@ import Foundation
 import UIKit
 
 struct AppUtility {
-    public static let AlefImages: [String] = ["closet", "ear", "lion", "pear", "watermelon"];
-    public static let BetImages: [String] = ["banana", "egg", "house"];
-    public static let GimelImages: [String] = ["fence"];
-    public static let DaledImages: [String] = ["fish"];
-    public static let HeyImages: [String] = ["hippo", "mountain", "pregnancy", "steering_wheel"];
-    public static let VavImages: [String] = ["curtain", "pink", "rose", "waffle"];
-    public static let ZainImages: [String] = ["beard", "fireworks", "fly", "gold", "old"];
-    public static let HetImages: [String] = ["cat", "menorah", "pig", "skirt", "snail"];
-    public static let TetImages: [String] = ["drop", "peacock", "telephone", "tractor", "tv"];
-    public static let YodImages: [String] = ["dove", "mosquito", "owl", "sea", "wine"];
-    public static let KafImages: [String] = ["ball", "chair", "dog", "hat", "money"];
-    public static let LamedImages: [String] = ["bun", "heart", "lemon", "night", "whale"];
-    public static let MemImages: [String] = ["bed", "camera", "mirror", "sunglasses", "umbrella"];
-    public static let NunImages: [String] = ["candle", "hotdog", "princess", "shoes", "shake"];
-    public static let SamechImages: [String] = ["books", "horse", "knife", "spinning_top", "squirrel"];
-    public static let AinImages: [String] = ["bone", "circle", "eyes", "kite", "plant"];
-    public static let PeyImages: [String] = ["butterfly", "cow", "flashlight", "hammer", "pj"];
-    public static let ZadiImages: [String] = ["cotton_candy", "fries", "scarf", "shell", "turtle"];
-    public static let KufImages: [String] = ["kangaroo", "monkey", "pencil_case", "rainbow", "rhino"];
-    public static let ReishImages: [String] = ["dr", "legs", "pomgranate", "traffic_lights"];
-    public static let ShinImages: [String] = ["chocolate", "garlic", "policeman", "remote", "teeth"];
-    public static let TafImages: [String] = ["apple", "baby", "drums", "parrot", "worm"];
+    public static var listOfImagePerLetter = ["alef": ["ear", "lion", "pear", "bicycle"], "bet": ["banana", "egg", "thunder", "house"], "gimel": ["carrot", "camel", "girrafe", "cheese"], "daled": ["dolphin", "bear", "honey", "fish"],"hey":["mountain", "hippo", "steering_wheel", "pregnancy"], "vav":["pink", "curtain", "waffles", "rose"],"zain":["fireworks", "beard", "zebra", "gold"], "heit":["cat", "menorah", "snail", "pig"],"tet": ["tractor", "tv", "drop", "peacock"], "yod": ["mosquito", "dove", "wine", "owl"],"kaf": ["chair", "ball", "hat", "dog"], "lamed":["heart", "bun", "whale", "lemon"], "mem": ["umbrella", "camera", "bed", "sunglasses"], "nun": ["hotdog", "candle", "snake", "shoes"],
+                                              "samech": ["spinning_top", "squirrel", "books", "horse"] ,"ain": ["kite", "circle", "bone", "eyes"],"pey":["flashlight", "butterfly", "cow", "hammer"] , "zadi": ["shell", "turtle", "chips", "cotton_candy"],"kuf":["kangoroo", "coconut", "rainbow", "pencil_case"] ,"reish":["pomegrant", "traffic_lights", "doctor", "legs"],"shin":["garlic", "chocolate", "remote", "legs"],"tav":["apple", "baby", "parrot", "drums"]]
     
+    public static var lettersList = ["alef", "bet", "gimel","daled","hey", "vav","zain", "het","tet", "yod","kaf", "lamed","mem", "nun",
+                                          "samech","ain","pey", "zadi","kuf","reish","shin","tav"]
+    
+    public static var gender = ""
+    public static var currentLetter = ""
+
+    static func setProgressLetter(key: String, progress: Float)
+    {
+        let defaults = UserDefaults.standard
+        defaults.set(progress, forKey: key)
+    }
     
     static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
         
