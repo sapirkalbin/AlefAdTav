@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "zain.png",
+      "filename" : "alef-try.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "zain-1.png",
+      "filename" : "alef-try-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "zain-2.png",
+      "filename" : "alef-try-2.png",
       "scale" : "3x"
     }
   ],

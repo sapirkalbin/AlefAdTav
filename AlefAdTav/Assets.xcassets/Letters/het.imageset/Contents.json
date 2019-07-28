@@ -7,10 +7,12 @@
     },
     {
       "idiom" : "universal",
+      "filename" : "het-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "het-2.png",
       "scale" : "3x"
     }
   ],
