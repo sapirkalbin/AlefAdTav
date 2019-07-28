@@ -11,6 +11,7 @@ import UIKit
 class LetterProgressCell: UICollectionViewCell {
     @IBOutlet weak var letterImage: UIImageView!
     @IBOutlet weak var progress: UIProgressView!
+    var name: String = ""
     
     override func awakeFromNib() {
         super.awakeFromNib()

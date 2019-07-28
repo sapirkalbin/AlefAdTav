@@ -1,0 +1,6 @@
+framework module Pods_AlefAdTavUITests {
+  umbrella header "Pods-AlefAdTavUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

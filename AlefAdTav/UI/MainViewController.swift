@@ -15,16 +15,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let boyTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(boyImageTapped(_:)))
-        let girlTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(girlImageTapped(_:)))
-
-        
-        boySelection.isUserInteractionEnabled = true
-        girlSelection.isUserInteractionEnabled = true
-
-        boySelection.addGestureRecognizer(boyTapGestureRecognizer)
-        girlSelection.addGestureRecognizer(girlTapGestureRecognizer)
-        
+        onTapSelectGender()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,10 +23,17 @@ class MainViewController: UIViewController {
         AppUtility.lockOrientation(.landscapeLeft)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        AppUtility.lockOrientation(.all)
+    
+    func onTapSelectGender() {
+        let boyTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(boyImageTapped(_:)))
+        let girlTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(girlImageTapped(_:)))
         
+        
+        boySelection.isUserInteractionEnabled = true
+        girlSelection.isUserInteractionEnabled = true
+        
+        boySelection.addGestureRecognizer(boyTapGestureRecognizer)
+        girlSelection.addGestureRecognizer(girlTapGestureRecognizer)
     }
     
     @objc func girlImageTapped(_ tapGestureRecognizer: UITapGestureRecognizer)

@@ -14,15 +14,15 @@ class AllLettersViewController: UIViewController ,UIGestureRecognizerDelegate
     @IBOutlet weak var collectionView: UICollectionView!
     
     static let cellID: String = "letterCellID"
-//    private let sectionInsets = UIEdgeInsets(top: 4.0, left: 4.0, bottom: 0.0, right: 4.0)
-    private let lettersList: [[String]] = [["alef", "beit", "gimel", "daled"], ["hey", "vav","zain", "heit"], ["tet", "yod","kaf", "lamed"], ["mem", "nun",
-                                "samech", "ain"], ["pey", "zadi","kuf", "reish"], ["shin", "taf"]]
+    //    private let sectionInsets = UIEdgeInsets(top: 4.0, left: 4.0, bottom: 0.0, right: 4.0)
+    private let lettersList: [[String]] = [["alef", "beit", "gimel"],["daled","hey", "vav"],["zain", "heit","tet"],[ "yod","kaf", "lamed"], ["mem", "nun",
+                                                                                                                                             "samech"] ,["ain","pey", "zadi"],["kuf","reish","shin"],["tav"]]
     var lettersOrNikud = ""
     var progressList =  [String : Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         collectionView.register(UINib(nibName: "LetterProgressCell", bundle: nil), forCellWithReuseIdentifier: AllLettersViewController.cellID)
         getLocalProgressData()
         createCollectionViewLayout()
@@ -32,17 +32,15 @@ class AllLettersViewController: UIViewController ,UIGestureRecognizerDelegate
     private func createCollectionViewLayout()
     {
         let layout = UICollectionViewFlowLayout()
-        layout.minimumInteritemSpacing = 0.0
-        layout.minimumLineSpacing = 0.0
+        layout.minimumInteritemSpacing = 4.0
+        layout.minimumLineSpacing = 1.0
         layout.sectionInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
-        collectionView.collectionViewLayout = layout
         
         collectionView.reloadData()
+        collectionView.collectionViewLayout = layout
+        
     }
     
-//    func notifyDataSetChanged(collectionView: UICollectionView, indexPathArr: [IndexPath]) {
-//        collectionView.reloadItems(at: indexPathArr);
-//    }
     
     func setSubject(lettersOrNikud: String)
     {
@@ -65,6 +63,15 @@ class AllLettersViewController: UIViewController ,UIGestureRecognizerDelegate
             }
         }
     }
+    
+    private func goToViewController(letter: String)
+    {
+        if let viewcontroller = storyboard?.instantiateViewController(withIdentifier: letter + "ViewController") as? LetterIntroViewController
+        {
+            viewcontroller.setLetter(letter: letter)
+            self.present(viewcontroller, animated: true, completion: nil)
+        }
+    }
 }
 
 extension AllLettersViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -83,20 +90,25 @@ extension AllLettersViewController: UICollectionViewDelegate, UICollectionViewDa
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AllLettersViewController.cellID, for: indexPath) as? LetterProgressCell
         {
             let name = lettersList[indexPath.section][indexPath.row]
-            
             cell.letterImage.image = UIImage(named: lettersList[indexPath.section][indexPath.row])
-            cell.backgroundColor = UIColor.red
             
             if let progressLetter = progressList[lettersList[indexPath.section][indexPath.row]] {
                 cell.progress.progress = Float(progressLetter)
             }
-            
+            cell.name = name
             return cell
         }
         
         return UICollectionViewCell()
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? LetterProgressCell
+        {
+                goToViewController(letter: cell.name)
+        }
+    }
+
     // func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     
     //        let sizeOfBoard = CGFloat(4);
@@ -107,18 +119,14 @@ extension AllLettersViewController: UICollectionViewDelegate, UICollectionViewDa
     //        return CGSize(width: cellWidth, height: cellWidth);
     //  }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//        //print("Width: ", collectionView.frame.width, " Height: ", collectionView.frame.height);
-//        return sectionInsets;
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-//        return sectionInsets.left;
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        return sectionInsets.left;
-//    }
-//
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return CGFloat(4)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return CGFloat(4)
+    }
+    
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FC22E9AD5D475867F7038C7 /* Pods_AlefAdTavUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB84AA02436D2F1CBCECD23 /* Pods_AlefAdTavUITests.framework */; };
 		432FFDD822D26A9100ED81CF /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FFDD722D26A9100ED81CF /* SubjectViewController.swift */; };
 		432FFDDA22DCD28600ED81CF /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FFDD922DCD28600ED81CF /* AppUtility.swift */; };
 		432FFDDC22DCD76100ED81CF /* AllLettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FFDDB22DCD76100ED81CF /* AllLettersViewController.swift */; };
@@ -17,11 +18,12 @@
 		438146CC22CF52CB00D7B306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438146CA22CF52CB00D7B306 /* LaunchScreen.storyboard */; };
 		438146D722CF52CB00D7B306 /* AlefAdTavTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438146D622CF52CB00D7B306 /* AlefAdTavTests.swift */; };
 		438146E222CF52CB00D7B306 /* AlefAdTavUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438146E122CF52CB00D7B306 /* AlefAdTavUITests.swift */; };
-		4392626A22E76BD3000B67C6 /* AlefIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392626822E76BD3000B67C6 /* AlefIntroViewController.swift */; };
-		4392626E22E76C24000B67C6 /* AlefWritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392626D22E76C24000B67C6 /* AlefWritingViewController.swift */; };
-		4392627022E76C55000B67C6 /* AlefImageSelectGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392626F22E76C55000B67C6 /* AlefImageSelectGameViewController.swift */; };
+		4392626E22E76C24000B67C6 /* LetterWritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392626D22E76C24000B67C6 /* LetterWritingViewController.swift */; };
 		4392627422E87B15000B67C6 /* LetterProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392627222E87B15000B67C6 /* LetterProgressCell.swift */; };
 		4392627522E87B15000B67C6 /* LetterProgressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4392627322E87B15000B67C6 /* LetterProgressCell.xib */; };
+		4392627722E9EBA7000B67C6 /* LetterGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392627622E9EBA7000B67C6 /* LetterGameViewController.swift */; };
+		4392627922ED84BF000B67C6 /* LetterIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392627822ED84BF000B67C6 /* LetterIntroViewController.swift */; };
+		85BF0D1CA2EE5BF99583A202 /* Pods_AlefAdTavTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59187F860C162223E6AB02A3 /* Pods_AlefAdTavTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BB84AA02436D2F1CBCECD23 /* Pods_AlefAdTavUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlefAdTavUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E492BF3FA7C4531DD650BA /* Pods-AlefAdTav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlefAdTav.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlefAdTav/Pods-AlefAdTav.debug.xcconfig"; sourceTree = "<group>"; };
+		3C9AF046FE790A720767B1E9 /* Pods-AlefAdTavUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlefAdTavUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlefAdTavUITests/Pods-AlefAdTavUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		432FFDD722D26A9100ED81CF /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
 		432FFDD922DCD28600ED81CF /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		432FFDDB22DCD76100ED81CF /* AllLettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLettersViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +63,17 @@
 		438146DD22CF52CB00D7B306 /* AlefAdTavUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlefAdTavUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		438146E122CF52CB00D7B306 /* AlefAdTavUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefAdTavUITests.swift; sourceTree = "<group>"; };
 		438146E322CF52CB00D7B306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4392626822E76BD3000B67C6 /* AlefIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefIntroViewController.swift; sourceTree = "<group>"; };
-		4392626D22E76C24000B67C6 /* AlefWritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefWritingViewController.swift; sourceTree = "<group>"; };
-		4392626F22E76C55000B67C6 /* AlefImageSelectGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlefImageSelectGameViewController.swift; sourceTree = "<group>"; };
+		4392626D22E76C24000B67C6 /* LetterWritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterWritingViewController.swift; sourceTree = "<group>"; };
 		4392627222E87B15000B67C6 /* LetterProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterProgressCell.swift; sourceTree = "<group>"; };
 		4392627322E87B15000B67C6 /* LetterProgressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LetterProgressCell.xib; sourceTree = "<group>"; };
+		4392627622E9EBA7000B67C6 /* LetterGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterGameViewController.swift; sourceTree = "<group>"; };
+		4392627822ED84BF000B67C6 /* LetterIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterIntroViewController.swift; sourceTree = "<group>"; };
+		46BDB96522F7D0C0F87D6897 /* Pods-AlefAdTavTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlefAdTavTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlefAdTavTests/Pods-AlefAdTavTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A080B42E8C23F5F3669D486 /* Pods-AlefAdTav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlefAdTav.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlefAdTav/Pods-AlefAdTav.release.xcconfig"; sourceTree = "<group>"; };
+		59187F860C162223E6AB02A3 /* Pods_AlefAdTavTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlefAdTavTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1C938F001B735DA63DBC09 /* Pods-AlefAdTavTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlefAdTavTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlefAdTavTests/Pods-AlefAdTavTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC0082D1C2717B753B173DC2 /* Pods_AlefAdTav.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlefAdTav.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAE39AC2451844A55F03499 /* Pods-AlefAdTavUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlefAdTavUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlefAdTavUITests/Pods-AlefAdTavUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85BF0D1CA2EE5BF99583A202 /* Pods_AlefAdTavTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +96,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC22E9AD5D475867F7038C7 /* Pods_AlefAdTavUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27F864E79A8352480EAECA02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30E492BF3FA7C4531DD650BA /* Pods-AlefAdTav.debug.xcconfig */,
+				4A080B42E8C23F5F3669D486 /* Pods-AlefAdTav.release.xcconfig */,
+				BC1C938F001B735DA63DBC09 /* Pods-AlefAdTavTests.debug.xcconfig */,
+				46BDB96522F7D0C0F87D6897 /* Pods-AlefAdTavTests.release.xcconfig */,
+				3C9AF046FE790A720767B1E9 /* Pods-AlefAdTavUITests.debug.xcconfig */,
+				EAAE39AC2451844A55F03499 /* Pods-AlefAdTavUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		438146B522CF52C900D7B306 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +123,8 @@
 				438146D522CF52CB00D7B306 /* AlefAdTavTests */,
 				438146E022CF52CB00D7B306 /* AlefAdTavUITests */,
 				438146BF22CF52C900D7B306 /* Products */,
+				27F864E79A8352480EAECA02 /* Pods */,
+				F8C1192135B983B38D156612 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,19 +186,11 @@
 		4392626722E76A7C000B67C6 /* Letters */ = {
 			isa = PBXGroup;
 			children = (
-				4392626C22E76BFE000B67C6 /* Alef */,
+				4392627822ED84BF000B67C6 /* LetterIntroViewController.swift */,
+				4392626D22E76C24000B67C6 /* LetterWritingViewController.swift */,
+				4392627622E9EBA7000B67C6 /* LetterGameViewController.swift */,
 			);
 			path = Letters;
-			sourceTree = "<group>";
-		};
-		4392626C22E76BFE000B67C6 /* Alef */ = {
-			isa = PBXGroup;
-			children = (
-				4392626822E76BD3000B67C6 /* AlefIntroViewController.swift */,
-				4392626D22E76C24000B67C6 /* AlefWritingViewController.swift */,
-				4392626F22E76C55000B67C6 /* AlefImageSelectGameViewController.swift */,
-			);
-			path = Alef;
 			sourceTree = "<group>";
 		};
 		4392627122E76CB1000B67C6 /* Utils */ = {
@@ -181,6 +201,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		F8C1192135B983B38D156612 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC0082D1C2717B753B173DC2 /* Pods_AlefAdTav.framework */,
+				59187F860C162223E6AB02A3 /* Pods_AlefAdTavTests.framework */,
+				1BB84AA02436D2F1CBCECD23 /* Pods_AlefAdTavUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 438146E622CF52CB00D7B306 /* Build configuration list for PBXNativeTarget "AlefAdTav" */;
 			buildPhases = (
+				24E4E41867F246033A4A8917 /* [CP] Check Pods Manifest.lock */,
 				438146BA22CF52C900D7B306 /* Sources */,
 				438146BB22CF52C900D7B306 /* Frameworks */,
 				438146BC22CF52C900D7B306 /* Resources */,
@@ -205,6 +236,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 438146E922CF52CB00D7B306 /* Build configuration list for PBXNativeTarget "AlefAdTavTests" */;
 			buildPhases = (
+				2C5B2C11B35609E18E696B3C /* [CP] Check Pods Manifest.lock */,
 				438146CE22CF52CB00D7B306 /* Sources */,
 				438146CF22CF52CB00D7B306 /* Frameworks */,
 				438146D022CF52CB00D7B306 /* Resources */,
@@ -223,6 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 438146EC22CF52CB00D7B306 /* Build configuration list for PBXNativeTarget "AlefAdTavUITests" */;
 			buildPhases = (
+				D29EA7D97388CD77208860EE /* [CP] Check Pods Manifest.lock */,
 				438146D922CF52CB00D7B306 /* Sources */,
 				438146DA22CF52CB00D7B306 /* Frameworks */,
 				438146DB22CF52CB00D7B306 /* Resources */,
@@ -308,6 +341,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24E4E41867F246033A4A8917 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlefAdTav-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C5B2C11B35609E18E696B3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlefAdTavTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D29EA7D97388CD77208860EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlefAdTavUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		438146BA22CF52C900D7B306 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -315,12 +417,12 @@
 			files = (
 				4392627422E87B15000B67C6 /* LetterProgressCell.swift in Sources */,
 				432FFDDA22DCD28600ED81CF /* AppUtility.swift in Sources */,
+				4392627722E9EBA7000B67C6 /* LetterGameViewController.swift in Sources */,
 				438146C422CF52C900D7B306 /* MainViewController.swift in Sources */,
 				432FFDDC22DCD76100ED81CF /* AllLettersViewController.swift in Sources */,
-				4392626A22E76BD3000B67C6 /* AlefIntroViewController.swift in Sources */,
 				432FFDD822D26A9100ED81CF /* SubjectViewController.swift in Sources */,
-				4392626E22E76C24000B67C6 /* AlefWritingViewController.swift in Sources */,
-				4392627022E76C55000B67C6 /* AlefImageSelectGameViewController.swift in Sources */,
+				4392626E22E76C24000B67C6 /* LetterWritingViewController.swift in Sources */,
+				4392627922ED84BF000B67C6 /* LetterIntroViewController.swift in Sources */,
 				438146C222CF52C900D7B306 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,9 +596,11 @@
 		};
 		438146E722CF52CB00D7B306 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E492BF3FA7C4531DD650BA /* Pods-AlefAdTav.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HSW24WYYS;
 				INFOPLIST_FILE = AlefAdTav/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -511,9 +615,11 @@
 		};
 		438146E822CF52CB00D7B306 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A080B42E8C23F5F3669D486 /* Pods-AlefAdTav.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HSW24WYYS;
 				INFOPLIST_FILE = AlefAdTav/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,6 +634,7 @@
 		};
 		438146EA22CF52CB00D7B306 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC1C938F001B735DA63DBC09 /* Pods-AlefAdTavTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +655,7 @@
 		};
 		438146EB22CF52CB00D7B306 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46BDB96522F7D0C0F87D6897 /* Pods-AlefAdTavTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -568,6 +676,7 @@
 		};
 		438146ED22CF52CB00D7B306 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C9AF046FE790A720767B1E9 /* Pods-AlefAdTavUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -587,6 +696,7 @@
 		};
 		438146EE22CF52CB00D7B306 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAAE39AC2451844A55F03499 /* Pods-AlefAdTavUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
