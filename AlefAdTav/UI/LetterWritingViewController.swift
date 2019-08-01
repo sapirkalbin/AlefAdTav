@@ -17,6 +17,7 @@ class LetterWritingViewController: UIViewController {
     var currentLetter = ""
     @IBOutlet var myView: UIView!
     
+    @IBOutlet weak var letterImage: UIImageView!
     @IBOutlet weak var tempImageView: UIImageView!
     @IBOutlet weak var nextButton: UIImageView!
     @IBOutlet weak var homeButton: UIImageView!
@@ -25,6 +26,11 @@ class LetterWritingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        letterImage.image = UIImage(named: AppUtility.currentLetter)
+        mainImageView.image = UIImage(named: AppUtility.currentLetter + "-try")
+        tempImageView.image = UIImage(named: AppUtility.currentLetter + "-try")
+
         ButtonsTapsHandler()
         simulateTap()
     }
@@ -108,10 +114,15 @@ class LetterWritingViewController: UIViewController {
         UIGraphicsEndImageContext()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        AppUtility.lockOrientation(.landscapeLeft)
+    }
+    
     func ButtonsTapsHandler() {
         let nextButtonTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(nextTapped(_:)))
         let homeButtonTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(homeTapped(_:)))
-        let previousButtonTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(nextTapped(_:)))
+        let previousButtonTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(prevTapped(_:)))
         
         
         homeButton.isUserInteractionEnabled = true

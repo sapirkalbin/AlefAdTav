@@ -28,6 +28,12 @@ class SubjectViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        AppUtility.lockOrientation(.landscapeLeft)
+    }
+    
+    
     @objc func nikudImageTapped(_ tapGestureRecognizer: UITapGestureRecognizer)
     {
         goToViewController(subject: "nikud")

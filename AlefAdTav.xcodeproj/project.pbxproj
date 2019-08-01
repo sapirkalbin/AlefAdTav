@@ -25,7 +25,7 @@
 		4392627922ED84BF000B67C6 /* LetterIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4392627822ED84BF000B67C6 /* LetterIntroViewController.swift */; };
 		4392629322EDC10D000B67C6 /* samech.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4392627D22EDC10C000B67C6 /* samech.mp3 */; };
 		4392629422EDC10D000B67C6 /* lamed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4392627E22EDC10C000B67C6 /* lamed.mp3 */; };
-		4392629522EDC10D000B67C6 /* heit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4392627F22EDC10C000B67C6 /* heit.mp3 */; };
+		4392629522EDC10D000B67C6 /* het.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4392627F22EDC10C000B67C6 /* het.mp3 */; };
 		4392629622EDC10D000B67C6 /* gimel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4392628022EDC10C000B67C6 /* gimel.mp3 */; };
 		4392629722EDC10D000B67C6 /* vav.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4392628122EDC10C000B67C6 /* vav.mp3 */; };
 		4392629822EDC10D000B67C6 /* pey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4392628222EDC10D000B67C6 /* pey.mp3 */; };
@@ -140,6 +140,9 @@
 		4392636C22EE064C000B67C6 /* eyes_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4392631322EE064C000B67C6 /* eyes_sound.mp3 */; };
 		4392636D22EE064C000B67C6 /* turtle_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4392631422EE064C000B67C6 /* turtle_sound.mp3 */; };
 		4392636E22EE064C000B67C6 /* squirrel_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4392631522EE064C000B67C6 /* squirrel_sound.mp3 */; };
+		43C9C1E022F356AD00DD498C /* good.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 439262B922EE059C000B67C6 /* good.mp3 */; };
+		43C9C1E122F356AD00DD498C /* great_female.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 439262BA22EE059C000B67C6 /* great_female.mp3 */; };
+		43C9C1E222F356AD00DD498C /* great_male.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 439262B822EE059C000B67C6 /* great_male.mp3 */; };
 		85BF0D1CA2EE5BF99583A202 /* Pods_AlefAdTavTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59187F860C162223E6AB02A3 /* Pods_AlefAdTavTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -187,7 +190,7 @@
 		4392627822ED84BF000B67C6 /* LetterIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterIntroViewController.swift; sourceTree = "<group>"; };
 		4392627D22EDC10C000B67C6 /* samech.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = samech.mp3; sourceTree = "<group>"; };
 		4392627E22EDC10C000B67C6 /* lamed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lamed.mp3; sourceTree = "<group>"; };
-		4392627F22EDC10C000B67C6 /* heit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heit.mp3; sourceTree = "<group>"; };
+		4392627F22EDC10C000B67C6 /* het.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = het.mp3; sourceTree = "<group>"; };
 		4392628022EDC10C000B67C6 /* gimel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gimel.mp3; sourceTree = "<group>"; };
 		4392628122EDC10C000B67C6 /* vav.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vav.mp3; sourceTree = "<group>"; };
 		4392628222EDC10D000B67C6 /* pey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pey.mp3; sourceTree = "<group>"; };
@@ -465,7 +468,7 @@
 				4392628C22EDC10D000B67C6 /* bet.mp3 */,
 				4392628622EDC10D000B67C6 /* daled.mp3 */,
 				4392628022EDC10C000B67C6 /* gimel.mp3 */,
-				4392627F22EDC10C000B67C6 /* heit.mp3 */,
+				4392627F22EDC10C000B67C6 /* het.mp3 */,
 				4392629022EDC10D000B67C6 /* hey.mp3 */,
 				4392629222EDC10D000B67C6 /* kaf.mp3 */,
 				4392628722EDC10D000B67C6 /* kuf.mp3 */,
@@ -699,6 +702,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C9C1E022F356AD00DD498C /* good.mp3 in Resources */,
+				43C9C1E122F356AD00DD498C /* great_female.mp3 in Resources */,
+				43C9C1E222F356AD00DD498C /* great_male.mp3 in Resources */,
 				4392631F22EE064C000B67C6 /* butterfly_sound.mp3 in Resources */,
 				4392636922EE064C000B67C6 /* dolphin_sound.mp3 in Resources */,
 				439262A422EDC10D000B67C6 /* shin.mp3 in Resources */,
@@ -732,7 +738,7 @@
 				4392632622EE064C000B67C6 /* owl_sound.mp3 in Resources */,
 				4392629922EDC10D000B67C6 /* ain.mp3 in Resources */,
 				4392631D22EE064C000B67C6 /* dove_sound.mp3 in Resources */,
-				4392629522EDC10D000B67C6 /* heit.mp3 in Resources */,
+				4392629522EDC10D000B67C6 /* het.mp3 in Resources */,
 				4392634222EE064C000B67C6 /* candle_sound.mp3 in Resources */,
 				4392636422EE064C000B67C6 /* beard_sound.mp3 in Resources */,
 				4392632A22EE064C000B67C6 /* curtain_sound.mp3 in Resources */,

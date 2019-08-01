@@ -26,7 +26,7 @@ class LetterIntroViewController: UIViewController, AVAudioPlayerDelegate {
         
         currentLetter = AppUtility.currentLetter
         
-        intializeSoundsTimer(seconds: 2)
+        intializeSoundsTimer(seconds: 0.3)
         intializeImagesTimer()
         
         mainImage.image = UIImage(named: currentLetter)

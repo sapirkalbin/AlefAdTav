@@ -29,6 +29,12 @@ class AllLettersViewController: UIViewController ,UIGestureRecognizerDelegate
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        AppUtility.lockOrientation(.landscapeLeft)
+    }
+    
+    
     private func createCollectionViewLayout()
     {
         let layout = UICollectionViewFlowLayout()

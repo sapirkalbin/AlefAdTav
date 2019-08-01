@@ -22,6 +22,7 @@ class LetterGameViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var circle4: UIImageView!
     @IBOutlet weak var circle5: UIImageView!
     @IBOutlet weak var peach: UIImageView!
+    @IBOutlet weak var letterImage: UIImageView!
     
     var currentLetter = ""
     var answersDictionary: Dictionary = [UIImageView:String]()
@@ -30,9 +31,23 @@ class LetterGameViewController: UIViewController, AVAudioPlayerDelegate {
     var counterRightAnswers = 0
     var endTimer = Timer()
     var gaveFeedback = true
+    var soundTimer = Timer()
+    var playString = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(AppUtility.gender == "girl")
+        {
+            playString = "click_on_images_female"
+        }
+        else
+        {
+            playString = "click_on_images_male"
+        }
+        
+        intializeSoundsTimer(seconds: 0.01)
+
         currentLetter = AppUtility.currentLetter
         ButtonsTapsHandler()
         intializeAssets()
@@ -51,12 +66,25 @@ class LetterGameViewController: UIViewController, AVAudioPlayerDelegate {
         circle3.isUserInteractionEnabled = true
         circle4.isUserInteractionEnabled = true
         circle5.isUserInteractionEnabled = true
+        image1.isUserInteractionEnabled = true
+        image5.isUserInteractionEnabled = true
+        image2.isUserInteractionEnabled = true
+        image3.isUserInteractionEnabled = true
+        image4.isUserInteractionEnabled = true
         
         circle1.addGestureRecognizer(circle1GestureRecognizer)
         circle2.addGestureRecognizer(circle2GestureRecognizer)
         circle3.addGestureRecognizer(circle3GestureRecognizer)
         circle4.addGestureRecognizer(circle4GestureRecognizer)
         circle5.addGestureRecognizer(circle5GestureRecognizer)
+        
+        image1.addGestureRecognizer(circle1GestureRecognizer)
+        image2.addGestureRecognizer(circle2GestureRecognizer)
+        image3.addGestureRecognizer(circle3GestureRecognizer)
+        image4.addGestureRecognizer(circle4GestureRecognizer)
+        image5.addGestureRecognizer(circle5GestureRecognizer)
+        
+        
     }
     
     func startEndTimer() {
@@ -115,6 +143,15 @@ class LetterGameViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
+    @objc func soundTimerHandler(_ timer: Timer) {
+        playSound(resourceName: playString)
+        soundTimer.invalidate()
+    }
+    
+    func intializeSoundsTimer(seconds: Double) {
+        soundTimer = Timer.scheduledTimer(timeInterval: seconds, target: self, selector: #selector(soundTimerHandler(_:)), userInfo: nil, repeats: false)
+    }
+    
     func checkAnswer(imageView: UIImageView)
     {
         guard let correctImages = AppUtility.listOfImagePerLetter[currentLetter] else {return}
@@ -134,24 +171,60 @@ class LetterGameViewController: UIViewController, AVAudioPlayerDelegate {
         }
         else
         {
-            circle1.image = UIImage(named: "wrong_circle")
+            imageView.image = UIImage(named: "wrong_circle")
             lastIsRight = false
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        AppUtility.lockOrientation(.landscapeLeft)
+    }
+    
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         if(!gaveFeedback)
         {
             if(lastIsRight)
             {
-                if(Bool.random())
+                if(AppUtility.gender == "girl")
                 {
-                    playSound(resourceName: "good")
+                    if(Bool.random())
+                    {
+                        playSound(resourceName: "good")
+                    }
+                    else
+                    {
+                        if(Bool.random())
+                        {
+                            playSound(resourceName: "correct_sound")
+                        }
+                        else
+                        {
+                            playSound(resourceName: "great_female")
+
+                        }
+                    }
                 }
                 else
                 {
-                    playSound(resourceName: "correct_sound")
+                    if(Bool.random())
+                    {
+                        playSound(resourceName: "good")
+                    }
+                    else
+                    {
+                        if(Bool.random())
+                        {
+                            playSound(resourceName: "correct_sound")
+                        }
+                        else
+                        {
+                            playSound(resourceName: "great_male")
+                        }
+                    }
                 }
+               
             }
             else
             {
@@ -188,6 +261,8 @@ class LetterGameViewController: UIViewController, AVAudioPlayerDelegate {
     
     func intializeAssets()
     {
+        letterImage.image = UIImage(named: AppUtility.currentLetter)
+        
         var array = [circle1, circle2, circle3, circle4, circle5]
         let correctAnswer1 = array.randomElement()
         array = array.filter{$0 != correctAnswer1}
